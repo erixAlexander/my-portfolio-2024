@@ -46,7 +46,7 @@ const Item = ({ title, image, demo, technologies, github, desc, index }) => {
   return (
     <motion.section
       className="item"
-      style={index === 0 ? { height: "calc(100vh - 180px)" } : {}}
+      style={index === 0 ? { height: "calc(100vh - 140px)" } : {}}
     >
       <img src={image} alt={title} />
 
