@@ -1,4 +1,4 @@
-@import "../../app.scss";
+@import "../../App.scss";
 
 .services {
   height: 100%;
@@ -165,14 +165,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
     @include tablet {
       flex-direction: row;
       width: 60%;
       height: fit-content;
       flex-wrap: wrap;
       margin-top: 40px;
-
     }
     @include mobile {
       flex-direction: column;
@@ -181,7 +180,6 @@
       width: 70%;
       flex-wrap: no-wrap;
       gap: 25px;
-
     }
 
     .service-item {
@@ -210,7 +208,7 @@
 
       h1 {
         height: 20%;
-        
+
         font-size: 1.5rem;
         font-weight: 400;
         color: #fff;
