@@ -11,7 +11,7 @@ import { SiExpress } from "react-icons/si";
 
 import "./Portfolio.scss";
 
-const Item = ({ title, image, demo, technologies, github, desc }) => {
+const Item = ({ title, image, demo, technologies, github, desc, index }) => {
   const textVariants = {
     initial: {
       opacity: 0,
@@ -44,7 +44,10 @@ const Item = ({ title, image, demo, technologies, github, desc }) => {
   };
 
   return (
-    <motion.section className="item">
+    <motion.section
+      className="item"
+      style={index === 0 ? { height: "calc(100vh - 120px)" } : {}}
+    >
       <img src={image} alt={title} />
 
       <motion.div
@@ -99,7 +102,7 @@ const Portfolio = () => {
       </div>
 
       {items.map((item, index) => (
-        <Item key={item.id} {...item} />
+        <Item key={item.id} {...item} index={index} />
       ))}
     </div>
   );
