@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-const Links = () => {
+const Links = ({  setOpen }) => {
   const linkItems = ["Homepage", "Services", "Portfolio", "Contact"];
   const variants = {
     open: {
@@ -39,6 +39,9 @@ const Links = () => {
           className="link"
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.95 }}
+          onClick={()=>{
+            setOpen(false)
+          }}
         >
           {item}
         </motion.a>
