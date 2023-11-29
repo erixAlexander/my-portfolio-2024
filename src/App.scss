@@ -3,6 +3,10 @@
 html {
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
+
+  @include mobile {
+    scroll-snap-type: none;
+  }
 }
 
 * {
