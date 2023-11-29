@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 
 const Links = () => {
-  const linkItems = ["Homepage", "Services", "Portfolio", "Projects", "About"];
+  const linkItems = ["Homepage", "Services", "Portfolio", "Contact"];
   const variants = {
     open: {
       transition: { staggerChildren: 0.1, delayChildren: 0.6 },
