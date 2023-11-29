@@ -53,6 +53,7 @@
 
     @include mobile {
       min-height: 120px;
+      position: static;
     }
 
     .Orange {
