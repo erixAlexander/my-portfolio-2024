@@ -93,7 +93,7 @@ const Portfolio = () => {
     <div className="portfolio">
       <div className="progress">
         <h1>
-          <span className={colors[color]}>Featured</span> Works
+          <span className={colors[color]}>Featured</span> Projects
         </h1>
         <div className="progressBar"></div>
       </div>

@@ -61,7 +61,7 @@ const Services = () => {
             <b className={colors[color]}>For Your</b> <span>Business</span>
           </h1>
           <a href="#portfolio">
-            <button>What Can We Do?</button>
+            <button>What Can We Do Together?</button>
           </a>
         </div>
       </div>
