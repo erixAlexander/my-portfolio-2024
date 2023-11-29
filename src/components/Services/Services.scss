@@ -1,0 +1,264 @@
+@import "../../app.scss";
+
+.services {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+
+  .text-container {
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    @include mobile {
+      display: none;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid #fff; /* Change color as needed */
+      width: 20%;
+      transform: scaleY(0.5);
+      margin-left: 5px;
+    }
+
+    h5 {
+      font-size: 0.9rem;
+      font-weight: 300;
+      color: #ffffff63;
+      margin-right: 5px;
+      max-width: 230px;
+    }
+  }
+  .title {
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 10px;
+
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 300;
+      color: #fff;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 1rem;
+      font-weight: 300;
+      color: #ffffff63;
+      text-align: center;
+      max-width: 300px;
+    }
+
+    .Orange {
+      color: orange;
+      transition: all 0.6s ease-in-out;
+    }
+
+    .White {
+      color: #fff;
+      transition: all 0.6s ease-in-out;
+    }
+
+    .Purple {
+      color: #8a2be2;
+      transition: all 0.6s ease-in-out;
+    }
+
+    .upper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      gap: 40px;
+      @include mobile {
+        gap: 20px;
+        max-height: 90px;
+        margin-top: 30px;
+      }
+      .people-img {
+        background-image: url("/people.webp");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%;
+        max-width: 170px;
+        max-height: 60px;
+        border-radius: 35px;
+        @include mobile {
+          max-width: 90px;
+        }
+      }
+      h1 {
+        font-size: 4rem;
+        font-weight: 300;
+        color: #fff;
+        text-align: center;
+        margin-bottom: 10px;
+        @include mobile {
+          font-size: 2.2rem;
+        }
+      }
+    }
+
+    .lower {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      gap: 40px;
+      @include mobile {
+        gap: 15px;
+        flex-direction: column;
+        height: 120px;
+      }
+      button {
+        background-color: orange;
+        color: rgb(0, 0, 0);
+        border: none;
+        border-radius: 30px;
+        padding: 20px 30px;
+        font-size: 1rem;
+        font-weight: 300;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        @include mobile {
+          padding: 10px 12px;
+        }
+        &:hover {
+          background-color: #000;
+          color: #fff;
+        }
+      }
+      h1 {
+        font-size: 4rem;
+        font-weight: 300;
+        color: #fff;
+        text-align: center;
+        margin-bottom: 10px;
+        @include mobile {
+          font-size: 2.2rem;
+        }
+      }
+    }
+    span {
+      font-size: 4rem;
+      font-weight: 100;
+      text-align: center;
+      max-width: 300px;
+      @include mobile {
+        font-size: 2.2rem;
+      }
+    }
+  }
+
+  .services-list {
+    height: 60%;
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    @include tablet {
+      flex-direction: row;
+      width: 60%;
+      height: fit-content;
+      flex-wrap: wrap;
+      margin-top: 40px;
+
+    }
+    @include mobile {
+      flex-direction: column;
+      height: fit-content;
+      margin-top: 30px;
+      width: 70%;
+      flex-wrap: no-wrap;
+      gap: 25px;
+
+    }
+
+    .service-item {
+      flex: 1;
+      min-height: 330px;
+      max-height: 80%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: column;
+      gap: 10px;
+      border: 1px solid #fff;
+
+      @include tablet {
+        min-height: 240px;
+        max-height: 240px;
+        min-width: 40%;
+      }
+
+      @include mobile {
+        min-height: fit-content;
+        max-height: 20%;
+        min-width: 100%;
+        justify-content: center;
+      }
+
+      h1 {
+        height: 20%;
+        
+        font-size: 1.5rem;
+        font-weight: 400;
+        color: #fff;
+        text-align: center;
+        margin: 10px;
+
+        @include tablet {
+          font-size: 1.2rem;
+        }
+      }
+      p {
+        min-height: 60%;
+        font-size: 0.9rem;
+        font-weight: 300;
+        color: #ffffff92;
+        text-align: justify;
+        margin: 10px 0;
+        padding: 0 16px;
+      }
+      a {
+        width: 90%;
+        height: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+      }
+      button {
+        min-width: 90%;
+        margin: 0 auto;
+        background-color: orange;
+        color: rgb(0, 0, 0);
+        border: none;
+        border-radius: 10px;
+        padding: 8px 20px;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        font-size: 1.2rem;
+
+        &:hover {
+          background-color: #000;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
