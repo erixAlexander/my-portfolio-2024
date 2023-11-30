@@ -101,9 +101,13 @@
       display: flex;
       gap: 2rem;
       margin-top: 2rem;
+
+      @include mobile {
+        gap: 1rem;
+      }
       #projects-btn {
-        background-color: #8a2be2;
-        color: #fff;
+        background-color: orange;
+        color: #000;
         border: none;
         padding: 0.9rem 1.2rem;
         border-radius: 5px;
@@ -117,8 +121,8 @@
         }
       }
       #contact-btn {
-        background-color: orange;
-        color: #000;
+        background-color: #8a2be2;
+        color: #fff;
         border: none;
         padding: 0.9rem 1.2rem;
         border-radius: 5px;
