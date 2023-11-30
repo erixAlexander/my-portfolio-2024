@@ -1,5 +1,8 @@
 import React from "react";
 import emailjs from "@emailjs/browser";
+import { FaPhoneFlip } from "react-icons/fa6";
+import { MdMarkEmailRead } from "react-icons/md";
+import { IoLogoWhatsapp } from "react-icons/io";
 import "./Contact.scss";
 
 const Contact = () => {
@@ -70,15 +73,24 @@ const Contact = () => {
       <div className="information">
         <h1>Let's Work Together!</h1>
         <div className="info-item">
-          <h5>Mail</h5>
+          <div className="info-icon-container">
+            <MdMarkEmailRead />
+            <h5>Mail</h5>
+          </div>
           <p>erix.gutierrez@gmail.com</p>
         </div>
         <div className="info-item">
-          <h5>Phone</h5>
+          <div className="info-icon-container">
+            <FaPhoneFlip />
+            <h5>Phone</h5>
+          </div>
           <p>+58 0424 4607888</p>
         </div>
         <div className="info-item">
-          <h5>Whatsapp</h5>
+          <div className="info-icon-container">
+            <IoLogoWhatsapp />
+            <h5>Whatsapp</h5>
+          </div>
           <a href=" https://wa.me/+5804244607888">
             <p>+58 0424 4607888</p>
           </a>

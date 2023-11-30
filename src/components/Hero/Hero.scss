@@ -102,21 +102,6 @@
       gap: 2rem;
       margin-top: 2rem;
       #projects-btn {
-        background-color: #fff;
-        color: #000;
-        border: none;
-        padding: 0.9rem 1.2rem;
-        border-radius: 5px;
-        font-size: 0.9rem;
-        font-weight: 400;
-        cursor: pointer;
-        transition: all 0.3s ease-in-out;
-        &:hover {
-          background-color: #8a2be2;
-          color: #fff;
-        }
-      }
-      #contact-btn {
         background-color: #8a2be2;
         color: #fff;
         border: none;
@@ -129,6 +114,21 @@
         &:hover {
           background-color: #fff;
           color: #000;
+        }
+      }
+      #contact-btn {
+        background-color: orange;
+        color: #000;
+        border: none;
+        padding: 0.9rem 1.2rem;
+        border-radius: 5px;
+        font-size: 0.9rem;
+        font-weight: 400;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+          background-color: #000;
+          color: #fff;
         }
       }
     }

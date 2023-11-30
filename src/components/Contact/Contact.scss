@@ -28,9 +28,23 @@
     @include mobile {
       gap: 10px;
     }
+
+    .info-icon-container {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      svg {
+        color: #8a2be2;
+        font-size: 1.6rem;
+
+        @include mobile {
+          font-size: 1.3rem;
+        }
+      }
+    }
   }
   h1 {
-    font-size: 4.5rem;
+    font-size: 4rem;
     margin-bottom: 20px;
 
     @include mobile {
@@ -39,7 +53,7 @@
     }
   }
   h5 {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
 
     @include mobile {
       font-size: 1.3rem;
@@ -47,7 +61,7 @@
   }
   p {
     font-size: 1rem;
-    color: orange;
+    color: white;
 
     @include mobile {
       font-size: 1.1rem;
