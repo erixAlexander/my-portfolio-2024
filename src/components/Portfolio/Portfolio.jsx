@@ -8,7 +8,6 @@ import { DiPostgresql } from "react-icons/di";
 import { IoLogoAndroid } from "react-icons/io";
 import { IoLogoJavascript } from "react-icons/io";
 import { SiExpress } from "react-icons/si";
-
 import "./Portfolio.scss";
 
 const Item = ({ title, image, demo, technologies, github, desc, index }) => {
