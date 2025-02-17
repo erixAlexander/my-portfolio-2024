@@ -8,6 +8,13 @@ import { DiPostgresql } from "react-icons/di";
 import { IoLogoAndroid } from "react-icons/io";
 import { IoLogoJavascript } from "react-icons/io";
 import { SiExpress } from "react-icons/si";
+import { GiArtificialIntelligence } from "react-icons/gi";
+import { RiNextjsLine } from "react-icons/ri";
+import { SiDrizzle } from "react-icons/si";
+import { RiTailwindCssFill } from "react-icons/ri";
+import { IoLogoFirebase } from "react-icons/io5";
+import { SiClerk } from "react-icons/si";
+import { FaPaypal } from "react-icons/fa";
 import "./Portfolio.scss";
 
 const Item = ({ title, image, demo, technologies, github, desc, index }) => {
@@ -40,6 +47,13 @@ const Item = ({ title, image, demo, technologies, github, desc, index }) => {
     android: IoLogoAndroid,
     js: IoLogoJavascript,
     express: SiExpress,
+    nextjs: RiNextjsLine,
+    ai: GiArtificialIntelligence,
+    drizzle: SiDrizzle,
+    tailwind: RiTailwindCssFill,
+    firebase: IoLogoFirebase,
+    clerk: SiClerk,
+    paypal: FaPaypal,
   };
 
   return (
