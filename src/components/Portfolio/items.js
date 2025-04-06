@@ -13,7 +13,7 @@ export default [
     image: IMG3,
     title: "AI Short Video Generator",
     github: "https://github.com/erixAlexander/ai-video-generator",
-    demo: "https://ai-video-generator-production.up.railway.app/dashboard",
+    demo: "https://your-ai-video-generator.netlify.app/dashboard",
     technologies: [
       "nextjs",
       "ai",
